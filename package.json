@@ -1,0 +1,28 @@
+{
+  "name": "check-ssl-expiration",
+  "version": "0.0.1",
+  "description": "Check given domain's SSL/TLS certificate and return days until expiration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyle138/check-ssl-expiration.git"
+  },
+  "keywords": [
+    "ssl",
+    "tls",
+    "check",
+    "expiration"
+  ],
+  "author": "Kyle138",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kyle138/check-ssl-expiration/issues"
+  },
+  "homepage": "https://github.com/kyle138/check-ssl-expiration#readme",
+  "dependencies": {
+    "https": "^1.0.0"
+  }
+}
