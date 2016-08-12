@@ -6,12 +6,12 @@ npm install check-ssl-expiration --save
 
 ## Usage
 ```javascript
-cse(domain, unit, callback)
+check-ssl-expiration(domain, unit, callback)
 ```
-**domain**
+### domain
 www.example.com (Do not include https:// or path)
 
-**unit**
+### unit
 years, months, weeks, days, hours, minutes, or seconds
 
 ## Example
