@@ -5,14 +5,14 @@ NPM package to check given domain's SSL/TLS certificate and return time left unt
 npm install check-ssl-expiration --save
 
 ## Usage
-```javascript
 check-ssl-expiration(domain, unit, callback)
-```
-### domain
-www.example.com (Do not include https:// or path)
 
-### unit
-years, months, weeks, days, hours, minutes, or seconds
+#### domain
+www.example.com 
+(Do not include https:// or path)
+
+#### unit
+years, months, weeks, **days**, hours, minutes, or seconds
 
 ## Example
 ```javascript
