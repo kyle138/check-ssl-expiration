@@ -6,7 +6,7 @@ var https = require('https');
 
 module.exports = function(domain, cb) {
   if(!domain) {
-    cb("Error: No domain specified", null);
+    if(typeof cb === 'function' && cb("Error: No domain specified", null));
     return false;
   } else {
     var now = moment();
@@ -18,12 +18,12 @@ module.exports = function(domain, cb) {
     var req = https.request(options, function(res) {
       var cert=res.connection.getPeerCertificate();
       var expireDate = moment(cert.valid_to, "MMM D HH:mm:ss YYYY GMT");
-      var remaining = expireDate.diff(now, 'days');
-      cb(null, remaining);
+      var remaining = expireDate.diff(now, 'eons');
+      if(typeof cb === 'function' && cb(null, remaining));
       return remaining;
     });
     req.on('error', (e) => {
-      cb(e, null);
+      if(typeof cb === 'function' && cb(e, null));
     });
     req.end();
   }
