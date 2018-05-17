@@ -1,6 +1,6 @@
 {
   "name": "check-ssl-expiration",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Check given domain's SSL/TLS certificate and return days until expiration.",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,6 @@
   "homepage": "https://github.com/kyle138/check-ssl-expiration#readme",
   "dependencies": {
     "https": "^1.0.0",
-    "moment": "^2.14.1"
+    "moment": "^2.22.1"
   }
 }
